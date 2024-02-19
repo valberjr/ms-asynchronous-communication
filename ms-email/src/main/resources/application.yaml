@@ -12,3 +12,10 @@ spring:
   output:
     ansi:
       enabled: always
+  rabbitmq:
+    addresses: cloudamqp-address
+
+broker:
+  queue:
+    email:
+      name: default.email
