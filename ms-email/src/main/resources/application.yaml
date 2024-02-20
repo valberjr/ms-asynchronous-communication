@@ -13,7 +13,18 @@ spring:
     ansi:
       enabled: always
   rabbitmq:
-    addresses: cloudamqp-address
+    addresses:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 broker:
   queue:
